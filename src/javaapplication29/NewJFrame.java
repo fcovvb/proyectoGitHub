@@ -39,9 +39,8 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
 
-        label.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
+        label.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        label.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -51,7 +50,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(139, 139, 139)
                 .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(150, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -61,9 +60,9 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(23, 23, 23)
                 .addComponent(boton)
-                .addGap(18, 18, 18)
-                .addComponent(label, javax.swing.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(36, 36, 36)
+                .addComponent(label, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(73, Short.MAX_VALUE))
         );
 
         pack();
@@ -71,6 +70,13 @@ public class NewJFrame extends javax.swing.JFrame {
 
     private void botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActionPerformed
         // TODO add your handling code here:
+        frases lafrase = new frases();
+        String html = "<html><body style='text-align:center;'>";
+        html = html + lafrase.starfrase() +"</body></html>";
+        
+        label.setText(html);
+        
+        
     }//GEN-LAST:event_botonActionPerformed
 
 
