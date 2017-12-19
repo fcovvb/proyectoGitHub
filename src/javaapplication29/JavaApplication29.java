@@ -10,10 +10,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author Duoc UC
  */
 public class JavaApplication29 {
-    
-    
-
-
+ 
     public static void main(String[] args) {
       NewJFrame frame = new NewJFrame();
       try {

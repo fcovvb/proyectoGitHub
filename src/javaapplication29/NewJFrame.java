@@ -29,6 +29,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         boton = new javax.swing.JButton();
         label = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -42,6 +43,8 @@ public class NewJFrame extends javax.swing.JFrame {
         label.setFont(new java.awt.Font("Segoe UI", 2, 18)); // NOI18N
         label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication29/r2d2.gif"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -50,9 +53,13 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addGap(139, 139, 139)
                 .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(150, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(label, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel2)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -62,7 +69,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(boton)
                 .addGap(36, 36, 36)
                 .addComponent(label, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(73, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -82,6 +91,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton boton;
+    private javax.swing.JLabel jLabel2;
     public javax.swing.JLabel label;
     // End of variables declaration//GEN-END:variables
 }
